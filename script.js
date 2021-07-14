@@ -1,5 +1,7 @@
 let blockHolder = $('block-holder');
 
+let daysArray = ['M', 'T', 'W', 'R', 'F'];
+
 let classes = [];
 
 classes[0] = {
@@ -9,4 +11,13 @@ classes[0] = {
     days: 'MWF',
     building: 'Smith',
     room: '111'
+}
+
+for (let i = 0; i < daysArray.length; i++) {
+    for (let e = 0; e < classes.length; e++) {
+        let currentDay = daysArray[i].toString();
+        if ((classes[e].days).includes(currentDay)) {
+            console.log(classes[e])
+        }
+    }
 }
