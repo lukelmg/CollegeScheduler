@@ -25,6 +25,7 @@ for (let i = 0; i < daysArray.length; i++) {
 
             let timer = document.createElement('h3');
             timer.innerHTML = '00:00';
+            timer.className = 'time-until ' + daysArray[i];
             classDiv.appendChild(timer);
 
             let buildingRoom = document.createElement('h5');
@@ -48,6 +49,19 @@ function setCurrentDayColor() {
     thisDay.style.backgroundColor = 'white';
     let thisDayHeader = document.getElementById(daysArray[n] + 'header');
     thisDayHeader.style.backgroundColor = 'white';
+    
+    let timers = document.getElementsByClassName('time-until');
+    for (let i = 0; i < timers.length; i++) {
+        timers[i].style.display = 'none'; 
+    }
+
+    console.log('time-until ' + daysArray[n])
+
+    let currentTimer = document.getElementsByClassName('time-until ' + daysArray[n]);
+    console.log(currentTimer);
+    for (let i = 0; i < currentTimer.length; i++) {
+        currentTimer[i].style.display = 'block';
+    }
     setTimeout(setCurrentDayColor, 60*1000);
   }
   
