@@ -2,8 +2,8 @@ let classes = [];
 
 classes[0] = {
     name: 'Calculus 1',
-    start: '8:30',
-    end: '9:45',
+    start: '08:30',
+    end: '09:45',
     days: 'TR',
     building: 'McEniry',
     room: '125',
@@ -62,8 +62,8 @@ classes[5] = {
 
 classes[6] = {
     name: 'Eng. Foundation',
-    start: '8:00',
-    end: '9:55',
+    start: '08:00',
+    end: '09:55',
     days: 'MWF',
     building: 'Storrs',
     room: '110',
@@ -74,8 +74,6 @@ for (let i = 0; i < classes.length; i++) {
     let current = hmsToSecondsOnly(classes[i].start);
     classes[i].realTime = current;
 }
-
-console.log(classes);
 
 classes.sort(function (a, b) {
     return a.realTime - b.realTime;
