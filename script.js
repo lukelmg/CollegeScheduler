@@ -47,12 +47,16 @@ let theDay = '';
 
 function setCurrentDayColor() {
     var d = new Date();
-    var n = d.getDay() - 1;
+    var n = d.getDay() + 1;
+    if (n < 0) {
+      n = 6;
+    }
     theDay = n;
+    console.log(daysArray);
     let thisDay = document.getElementById(daysArray[n]);
-    thisDay.style.backgroundColor = 'white';
+    thisDay.style.backgroundColor = '#26282e';
     let thisDayHeader = document.getElementById(daysArray[n] + 'header');
-    thisDayHeader.style.backgroundColor = 'white';
+    thisDayHeader.style.backgroundColor = '#26282e';
     
     let timers = document.getElementsByClassName('time-until');
     for (let i = 0; i < timers.length; i++) {

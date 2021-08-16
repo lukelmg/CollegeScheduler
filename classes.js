@@ -1,12 +1,12 @@
 let classes = [];
 
 classes[0] = {
-    name: 'Calculus 1',
+    name: 'Calculus 2',
     start: '08:30',
     end: '09:45',
     days: 'TR',
-    building: 'McEniry',
-    room: '125',
+    building: 'Fretwell',
+    room: '113',
     color: 'red'
 }
 

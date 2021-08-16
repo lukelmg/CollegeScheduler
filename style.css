@@ -1,11 +1,12 @@
 body, html {
     margin:0;
     background-color: rgb(243, 243, 243);
+    background-color: #293241;
 }
 
 h1 {
     font-family: 'Lato', sans-serif;
-    color:black;
+    color:gray;
    /* background-color:rgb(228, 228, 228); */
     display: table;
     margin: 0 auto;
@@ -39,7 +40,8 @@ h6 {
     height:100vh;
     width:20%;
     background-color:rgb(243, 243, 243);
-    border:1px solid rgb(228, 228, 228);
+    background-color: #151619;
+    /*border:1px solid rgb(228, 228, 228);*/
     box-sizing: border-box;
     margin:0;
     display:inline-block;
@@ -58,5 +60,5 @@ h6 {
     width: 80%;
     border-radius: 5px;
     font-size: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    /*box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);*/
 }
